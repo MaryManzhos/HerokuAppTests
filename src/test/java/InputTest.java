@@ -38,18 +38,6 @@ public class InputTest {
         Assert.assertEquals(input.getAttribute("value"),"2");
     }
 
-    @Test
-    public void checkBoxTest(){
-        driver.get("http://the-internet.herokuapp.com/checkboxes");
-        List<WebElement> input = driver.findElements(By.tagName("input"));
-        Assert.assertFalse(input.get(0).isSelected());
-        input.get(0).click();
-        Assert.assertTrue(input.get(0).isSelected());
-        Assert.assertTrue(input.get(1).isSelected());
-        input.get(1).click();
-        Assert.assertFalse(input.get(1).isSelected());
-    }
-
     @AfterMethod
     public void closeBrowser(){
         driver.quit();
