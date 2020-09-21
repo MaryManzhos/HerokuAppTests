@@ -8,7 +8,7 @@ import java.util.List;
 public class AddRemoveElements extends InputTest{
 
     @Test
-    public void AddRemoveElementsTest() {
+    public void addRemoveElementsTest() {
         driver.get("http://the-internet.herokuapp.com/add_remove_elements/");
 
         // Add 2 elements
