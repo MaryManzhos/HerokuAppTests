@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DropdownTest extends InputTest{
+public class DropdownTest extends SetUp{
 
     @Test
     public void dropdownTest(){

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class CheckBoxesTest extends InputTest{
+public class CheckBoxesTest extends SetUp{
 
     @Test
     public void checkBoxesTest(){

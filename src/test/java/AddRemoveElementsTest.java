@@ -5,10 +5,28 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class AddRemoveElementsTest extends InputTest{
+public class AddRemoveElementsTest extends SetUp{
 
     @Test
-    public void addRemoveElementsTest() {
+    public void addElementsTest() {
+        driver.get("http://the-internet.herokuapp.com/add_remove_elements/");
+
+        // Add 2 elements
+        WebElement addElement = driver.findElement(By.xpath("//*[@id=\"content\"]/div/button"));
+        int amount = 0;
+        for(int i = 0; i < 2; i++) {
+            addElement.click();
+            amount++;
+        }
+
+        // Assert size
+        List<WebElement> addElements = driver.findElements(By.className("added-manually"));
+        int fact = addElements.size();
+        Assert.assertEquals(fact, amount);
+    }
+
+    @Test
+    public void removeElementsTest() {
         driver.get("http://the-internet.herokuapp.com/add_remove_elements/");
 
         // Add 2 elements
