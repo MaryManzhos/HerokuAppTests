@@ -1,10 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import static org.testng.Assert.*;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class DataTablesTest extends SetUp{
 
@@ -18,11 +16,11 @@ public class DataTablesTest extends SetUp{
         WebElement cell4 = driver.findElement(By.xpath("//*[@id=\"table1\"]/tbody/tr[3]/td[4]"));
         WebElement cell5 = driver.findElement(By.xpath("//*[@id=\"table1\"]/tbody/tr[4]/td[5]"));
 
-        Assert.assertEquals(cell1.getText(), "Smith");
-        Assert.assertEquals(cell2.getText(), "Frank");
-        Assert.assertEquals(cell3.getText(), "fbach@yahoo.com");
-        Assert.assertEquals(cell4.getText(), "$100.00");
-        Assert.assertEquals(cell5.getText(), "http://www.timconway.com");
+        assertEquals(cell1.getText(), "Smith");
+        assertEquals(cell2.getText(), "Frank");
+        assertEquals(cell3.getText(), "fbach@yahoo.com");
+        assertEquals(cell4.getText(), "$100.00");
+        assertEquals(cell5.getText(), "http://www.timconway.com");
 
     }
 
@@ -36,11 +34,11 @@ public class DataTablesTest extends SetUp{
         WebElement cell4 = driver.findElement(By.xpath("//*[@id=\"table2\"]/tbody/tr[3]/td[4]"));
         WebElement cell5 = driver.findElement(By.xpath("//*[@id=\"table2\"]/tbody/tr[4]/td[5]"));
 
-        Assert.assertEquals(cell1.getText(), "Smith");
-        Assert.assertEquals(cell2.getText(), "Frank");
-        Assert.assertEquals(cell3.getText(), "fbach@yahoo.com");
-        Assert.assertEquals(cell4.getText(), "$100.00");
-        Assert.assertEquals(cell5.getText(), "http://www.timconway.com");
+        assertEquals(cell1.getText(), "Smith");
+        assertEquals(cell2.getText(), "Frank");
+        assertEquals(cell3.getText(), "fbach@yahoo.com");
+        assertEquals(cell4.getText(), "$100.00");
+        assertEquals(cell5.getText(), "http://www.timconway.com");
 
     }
 
