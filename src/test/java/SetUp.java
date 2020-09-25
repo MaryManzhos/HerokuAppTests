@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeMethod;
 import java.util.concurrent.TimeUnit;
 
 public class SetUp {
-
     WebDriver driver;
 
     @BeforeMethod
@@ -22,8 +21,7 @@ public class SetUp {
     }
 
     @AfterMethod
-    public void closeBrowser(){
+    public void closeBrowser() {
         driver.quit();
     }
-
 }

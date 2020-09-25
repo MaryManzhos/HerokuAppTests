@@ -6,24 +6,23 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DropdownTest extends SetUp{
+public class DropdownTest extends SetUp {
 
     @Test
-    public void dropdownTest(){
-
+    public void dropdownTest() {
         driver.get("http://the-internet.herokuapp.com/dropdown");
         //Get all elements
-        List <WebElement> options = driver.findElements(By.tagName("option"));
-        List <String> optionsValue = new ArrayList<String>();
+        List<WebElement> options = driver.findElements(By.tagName("option"));
+        List<String> optionsValue = new ArrayList<String>();
 
-        for (WebElement value: options) {
+        for (WebElement value : options) {
             optionsValue.add(value.getText());
         }
 
         List<String> expectedOptions = new ArrayList<String>();
-        expectedOptions.add(0,"Please select an option");
-        expectedOptions.add(1,"Option 1");
-        expectedOptions.add(2,"Option 2");
+        expectedOptions.add(0, "Please select an option");
+        expectedOptions.add(1, "Option 1");
+        expectedOptions.add(2, "Option 2");
 
         //Check all elements
         Assert.assertEquals(optionsValue, expectedOptions);

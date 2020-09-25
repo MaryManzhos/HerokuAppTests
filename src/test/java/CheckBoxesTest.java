@@ -5,13 +5,12 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class CheckBoxesTest extends SetUp{
+public class CheckBoxesTest extends SetUp {
 
     @Test
-    public void checkBoxesTest(){
-
+    public void checkBoxesTest() {
         driver.get("http://the-internet.herokuapp.com/checkboxes");
-        List <WebElement> checkBoxes = driver.findElements(By.tagName("input"));
+        List<WebElement> checkBoxes = driver.findElements(By.tagName("input"));
 
         //check 1 checkbox unchecked
         Assert.assertFalse(checkBoxes.get(0).isSelected());
@@ -30,6 +29,5 @@ public class CheckBoxesTest extends SetUp{
 
         //check 2 checkbox unchecked
         Assert.assertFalse(checkBoxes.get(1).isSelected());
-
     }
 }

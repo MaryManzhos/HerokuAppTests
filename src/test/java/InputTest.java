@@ -9,7 +9,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class InputTest {
@@ -28,18 +27,18 @@ public class InputTest {
     }
 
     @Test
-    public void inputTest(){
+    public void inputTest() {
         driver.get("http://the-internet.herokuapp.com/inputs");
         WebElement input = driver.findElement(By.tagName("input"));
         input.sendKeys("2");
         input.sendKeys(Keys.ARROW_UP);
-        Assert.assertEquals(input.getAttribute("value"),"3");
+        Assert.assertEquals(input.getAttribute("value"), "3");
         input.sendKeys(Keys.ARROW_DOWN);
-        Assert.assertEquals(input.getAttribute("value"),"2");
+        Assert.assertEquals(input.getAttribute("value"), "2");
     }
 
     @AfterMethod
-    public void closeBrowser(){
+    public void closeBrowser() {
         driver.quit();
     }
 

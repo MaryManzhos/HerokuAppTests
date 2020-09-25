@@ -4,11 +4,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class HoversTest extends SetUp{
+public class HoversTest extends SetUp {
 
     @Test
-    public void hover1Test(){
-
+    public void hover1Test() {
         driver.get("http://the-internet.herokuapp.com/hovers");
         WebElement img = driver.findElement(By.cssSelector("#content > div > div:nth-child(3) > img"));
         Actions action = new Actions(driver);
@@ -23,12 +22,10 @@ public class HoversTest extends SetUp{
         WebElement name = driver.findElement(By.tagName("h1"));
         String actualResult2 = name.getText();
         Assert.assertEquals(actualResult2, "Not Found");
-
     }
 
     @Test
-    public void hover2Test(){
-
+    public void hover2Test() {
         driver.get("http://the-internet.herokuapp.com/hovers");
         WebElement img = driver.findElement(By.cssSelector("#content > div > div:nth-child(4) > img"));
         Actions action = new Actions(driver);
@@ -43,12 +40,10 @@ public class HoversTest extends SetUp{
         WebElement name = driver.findElement(By.tagName("h1"));
         String actualResult2 = name.getText();
         Assert.assertEquals(actualResult2, "Not Found");
-
     }
 
     @Test
-    public void hover3Test(){
-
+    public void hover3Test() {
         driver.get("http://the-internet.herokuapp.com/hovers");
         WebElement img = driver.findElement(By.cssSelector("#content > div > div:nth-child(5) > img"));
         Actions action = new Actions(driver);
@@ -63,7 +58,6 @@ public class HoversTest extends SetUp{
         WebElement name = driver.findElement(By.tagName("h1"));
         String actualResult2 = name.getText();
         Assert.assertEquals(actualResult2, "Not Found");
-
     }
 
 }

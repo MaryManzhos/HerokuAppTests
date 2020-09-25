@@ -26,7 +26,7 @@ public class CheckBoxTest {
     }
 
     @Test
-    public void checkBoxTest(){
+    public void checkBoxTest() {
         driver.get("http://the-internet.herokuapp.com/checkboxes");
         List<WebElement> input = driver.findElements(By.tagName("input"));
         Assert.assertFalse(input.get(0).isSelected());
@@ -38,7 +38,7 @@ public class CheckBoxTest {
     }
 
     @AfterMethod
-    public void closeBrowser(){
+    public void closeBrowser() {
         driver.quit();
     }
 
