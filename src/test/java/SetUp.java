@@ -16,7 +16,6 @@ public class SetUp {
         options.setHeadless(false);
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
-        // driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 

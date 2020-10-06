@@ -1,65 +1,73 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="src/test/resources/style.css">
-            <body>
-                <h1>Table</h1>
-                <table id="table">
-                <tr>
-                    <th>№</th>
-                    <th>FirstName</th>
-                    <th>LastName</th>
-                    <th>Phone Number</th>
-                    <th>Email</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Ivan</td>
-                    <td>Ivanov</td>
-                    <td>+375557779955</td>
-                    <td>ivanov@gmail.com</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Petr</td>
-                    <td>Petrov</td>
-                    <td>+375557779900</td>
-                    <td>petrov@gmail.com</td>
-                </tr>
-            </table>
-            <h1>Input text</h1>
-            <form>
-                <label for="login" style="font-family:Times New Roman; font-size:18px">Login:</label><br>
-                <input type="text" id="login" name="Login" style="font-family:Times New Roman; font-size:18px; border-radius:5px; width:10%; height:30px; margin-bottom:10px; margin-top:10px"><br>
-                <label for="password" style="font-family:Times New Roman; font-size:18px">Password:</label><br>
-                <input type="password" id="password" name="Password" style="font-family:Times New Roman; font-size:18px; border-radius:5px; width:10%; height:30px; margin-bottom:10px; margin-top:10px">
-            </form>
-            <h1>Checkbox</h1>
-            <form>
-                <span style="font-family:Times New Roman; font-size:18px">Choose your favorite animal</span><br>
-                <input type="checkbox" id="dogs" name="dogs" value="Dogs" >
-                <label for="dogs" style="font-family:Times New Roman; font-size:18px">Dogs</label><br>
-                <input type="checkbox" id="cats" name="cats" value="Cats">
-                <label for="cats" style="font-family:Times New Roman; font-size:18px">Cats</label><br>
-            </form>
-            <h1>Select</h1>
-            <label for="moods" style="font-family:Times New Roman; font-size:20px">Choose your mood:</label><br>
-            <select name="moods" id="moods" style="width:10%; height:30px; font-family:Times New Roman; font-size:16px; margin-top:10px">
-                <option value="happy">Happy</option>
-                <option value="cheerful">Cheerful</option>
-                <option value="glad">Glad</option>
-                <option value="norm">Norm</option>
-                <option value="sad">Sad</option>
-                <option value="disappointed">Disappointed</option>
-            </select>
-            <h1>Button</h1>
-            <button type="button" style="color:#696969; background:radial-gradient(#FFFFFF, #BC8F8F); box-shadow:0 2px 3px 0 grey; margin:10px; cursor:pointer; text-align:center; font-size:16px; border:1px solid grey; border-radius:5px; width:150px; height:40px;">Button</button>
-            <h1>Images</h1>
-            <img src="src/test/resources/Belle.png" alt="Belle" style="width:40%; border-radius:30px">
-            <h1>Tag p</h1>
-            <p id="Cinderella" style="font-family:Times New Roman; font-size:18px">ONCE UPON A TIME a girl named Cinderella lived with her stepmother and two stepsisters.</p>
-            <h1>HyperLink</h1>
-            <a id="Disney" href="https://www.disneylandparis.ru/" style="color:#BC8F8F; font-family:Times New Roman; font-size:20px; font-style:italic">Welcome to DisneyLand!</a>
-        </body>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link href="src/test/resources/style.css" rel="stylesheet">
+<body>
+<h1>Table</h1>
+<table id="table">
+    <tr>
+        <th>№</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Ivan</td>
+        <td>Ivanov</td>
+        <td>+375557779955</td>
+        <td>ivanov@gmail.com</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Petr</td>
+        <td>Petrov</td>
+        <td>+375557779900</td>
+        <td>petrov@gmail.com</td>
+    </tr>
+</table>
+<h1>Input text</h1>
+<form>
+    <label for="login" style="font-family:Times New Roman; font-size:18px">Login:</label><br>
+    <input id="login" name="Login" style="font-family:Times New Roman; font-size:18px; border-radius:5px; width:10%; height:30px; margin-bottom:10px; margin-top:10px"
+           type="text"><br>
+    <label for="password" style="font-family:Times New Roman; font-size:18px">Password:</label><br>
+    <input id="password" name="Password" style="font-family:Times New Roman; font-size:18px; border-radius:5px; width:10%; height:30px; margin-bottom:10px; margin-top:10px"
+           type="password">
+</form>
+<h1>Checkbox</h1>
+<form>
+    <span style="font-family:Times New Roman; font-size:18px">Choose your favorite animal</span><br>
+    <input id="dogs" name="dogs" type="checkbox" value="Dogs">
+    <label for="dogs" style="font-family:Times New Roman; font-size:18px">Dogs</label><br>
+    <input id="cats" name="cats" type="checkbox" value="Cats">
+    <label for="cats" style="font-family:Times New Roman; font-size:18px">Cats</label><br>
+</form>
+<h1>Select</h1>
+<label for="moods" style="font-family:Times New Roman; font-size:20px">Choose your mood:</label><br>
+<select id="moods" name="moods"
+        style="width:10%; height:30px; font-family:Times New Roman; font-size:16px; margin-top:10px">
+    <option value="happy">Happy</option>
+    <option value="cheerful">Cheerful</option>
+    <option value="glad">Glad</option>
+    <option value="norm">Norm</option>
+    <option value="sad">Sad</option>
+    <option value="disappointed">Disappointed</option>
+</select>
+<h1>Button</h1>
+<button style="color:#696969; background:radial-gradient(#FFFFFF, #BC8F8F); box-shadow:0 2px 3px 0 grey; margin:10px; cursor:pointer; text-align:center; font-size:16px; border:1px solid grey; border-radius:5px; width:150px; height:40px;"
+        type="button">
+    Button
+</button>
+<h1>Images</h1>
+<img alt="Belle" src="src/test/resources/Belle.png" style="width:40%; border-radius:30px">
+<h1>Tag p</h1>
+<p id="Cinderella" style="font-family:Times New Roman; font-size:18px">ONCE UPON A TIME a girl named Cinderella lived
+    with her stepmother and two stepsisters.</p>
+<h1>HyperLink</h1>
+<a href="https://www.disneylandparis.ru/" id="Disney"
+   style="color:#BC8F8F; font-family:Times New Roman; font-size:20px; font-style:italic">Welcome to DisneyLand!</a>
+</body>
+</head>
 </html>
