@@ -4,13 +4,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.*;
 
-public class DynamicControlsTest extends SetUp{
+public class DynamicControlsTest extends SetUp {
     @Test
     public void isCorrectFunctionDynamicControls() {
         driver.get("http://the-internet.herokuapp.com/dynamic_controls");
@@ -31,7 +29,7 @@ public class DynamicControlsTest extends SetUp{
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
         WebElement input = driver.findElement(By.xpath("//*[@id=\"input-example\"]/input"));
-        assertFalse(input.isEnabled(),"Input is enabled");
+        assertFalse(input.isEnabled(), "Input is enabled");
 
         WebElement enableButton = driver.findElement(By.cssSelector("[onclick=\"swapInput()\"]"));
         enableButton.click();
@@ -39,6 +37,6 @@ public class DynamicControlsTest extends SetUp{
         WebElement messageEnable = driver.findElement(By.id("message"));
         wait.until(ExpectedConditions.visibilityOf(messageEnable));
 
-        assertTrue(input.isEnabled(),"Input is disabled");
+        assertTrue(input.isEnabled(), "Input is disabled");
     }
 }
